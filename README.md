@@ -4,4 +4,4 @@ when you did changes to the App.jsx thingy then go to the terminal of the `every
 
 after that, everything inside the `dist` folder, put it outside of the `everything-else` folder
 
-yay
+then commit and push yay
