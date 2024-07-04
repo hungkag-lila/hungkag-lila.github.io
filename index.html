@@ -1,14 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hungkag-lila</title>
-    <script type="module" crossorigin src="https://hungkag-lila.github.io/assets/index-FIy-bh0o.js"></script>
-    <link rel="stylesheet" crossorigin href="https://hungkag-lila.github.io/assets/index-L0ed2t2e.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Leveling Quest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quest-box" id="questBox">
+        <div class="quest-header">
+            <span class="quest-title">QUEST INFO</span>
+            <button class="close-btn" onclick="closeQuest()">×</button>
+        </div>
+        <div class="quest-body">
+            <p class="quest-desc">DAILY QUEST - TRAIN TO BECOME A FORMIDABLE COMBATANT</p>
+            <div class="goal">
+                Push-ups: <span id="pushUps">0/100</span>
+                <button class="increment-btn" onclick="increment('pushUps', 100)">+</button>
+            </div>
+            <div class="goal">
+                Sit-ups: <span id="sitUps">0/100</span>
+                <button class="increment-btn" onclick="increment('sitUps', 100)">+</button>
+            </div>
+            <div class="goal">
+                Squats: <span id="squats">0/100</span>
+                <button class="increment-btn" onclick="increment('squats', 100)">+</button>
+            </div>
+            <div class="goal">
+                Run: <span id="run">0/10km</span>
+                <button class="increment-btn" onclick="increment('run', 10, 'km')">+</button>
+            </div>
+        </div>
+        <div class="quest-footer">
+            <p><span class="caution">CAUTION!</span> - IF THE DAILY QUEST REMAINS INCOMPLETE, PENALTIES WILL BE GIVEN ACCORDINGLY.</p>
+            <div class="timer" id="timer"></div>
+            <div class="exp-bar">
+                <div id="expProgress" class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="attribute-box" id="attributeBox">
+        <div class="attribute-header">
+            <span class="attribute-title">STATUS</span>
+            <button class="close-btn" onclick="closeAttributes()">×</button>
+        </div>
+        <div class="attribute-body">
+            <p>Level: <span id="level">1</span></p>
+            <p>EXP: <span id="exp">0</span> / <span id="expLimit">300</span></p>
+            <p>Available Points: <span id="availablePoints">0</span></p>
+            <div class="attributes">
+                <div class="attribute">
+                    Strength: <span id="strength">10</span>
+                    <button class="increment-btn" onclick="incrementAttribute('strength')">+</button>
+                </div>
+                <div class="attribute">
+                    Agility: <span id="agility">10</span>
+                    <button class="increment-btn" onclick="incrementAttribute('agility')">+</button>
+                </div>
+                <div class="attribute">
+                    Perception: <span id="perception">10</span>
+                    <button class="increment-btn" onclick="incrementAttribute('perception')">+</button>
+                </div>
+                <div class="attribute">
+                    Vitality: <span id="vitality">10</span>
+                    <button class="increment-btn" onclick="incrementAttribute('vitality')">+</button>
+                </div>
+                <div class="attribute">
+                    Intelligence: <span id="intelligence">10</span>
+                    <button class="increment-btn" onclick="incrementAttribute('intelligence')">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>

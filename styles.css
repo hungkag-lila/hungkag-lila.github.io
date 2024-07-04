@@ -1,0 +1,123 @@
+body {
+    background-color: #2b2b2b;
+    font-size: 115%;
+}
+
+p {
+    text-align: center;
+    font-size: 90%
+}
+
+.quest-box, .attribute-box {
+    width: 345px; 
+    background: linear-gradient(to bottom, #0a0a23, #1c1c3c);
+    border: 2px solid #4b4b82;
+    border-radius: 10px;
+    color: #fff;
+    padding: 23px; 
+    position: absolute;
+    box-shadow: 0 0 11.5px rgba(0, 0, 0, 0.5); 
+    font-family: 'Arial Rounded MT Bold';
+}
+.quest-box {
+    top: 57.5px; 
+    left: 57.5px; 
+}
+
+.attribute-box {
+    top: 57.5px; 
+    right: 57.5px; 
+}
+
+.quest-header, .attribute-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #4b4b82;
+    padding-bottom: 11.5px; 
+    margin-bottom: 11.5px;
+}
+
+.quest-title {
+    font-size: 20.7px;
+    font-weight: bold;
+    margin-left: 26%;
+}
+
+.attribute-title {
+    font-size: 20.7px;
+    font-weight: bold;
+    margin-left: 36%;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 23px; 
+    cursor: pointer;
+}
+
+.quest-body, .attribute-body {
+    text-align: left;
+}
+
+.quest-desc {
+    font-size: 16.1px; 
+    margin-bottom: 11.5px; 
+}
+
+.goal, .attribute {
+    font-size: 16.1px;
+    margin-bottom: 5.75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.increment-btn {
+    background-color: #4b4b82;
+    border: none;
+    color: #fff;
+    padding: 5.75px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quest-footer {
+    border-top: 1px solid #4b4b82;
+    padding-top: 11.5px;
+    margin-top: 11.5px; 
+}
+
+.caution {
+    color: #ff4d4d;
+}
+
+.timer {
+    margin-top: 11.5px;
+    font-size: 16.1px;
+    text-align: center;
+}
+
+.exp-bar {
+    background-color: #4b4b82;
+    height: 23px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 11.5px; 
+}
+
+.progress-bar {
+    background-color: #00ff00;
+    height: 100%;
+    width: 0%;
+}
+
+.attributes {
+    margin-top: 11.5px;
+}
+
+.attribute-box p {
+    margin: 5.75px 0;
+}
